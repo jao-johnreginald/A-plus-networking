@@ -169,7 +169,7 @@ config t
 ip routing
 ip dhcp pool CAMERA6
 host 10.62.50.6 255.255.255.0
-client-identifier 001a.0704.7f5b
+client-identifier 001a.070c.528b
 ip dhcp pool CAMERA8
 host 10.62.50.8 255.255.255.0
 client-identifier 001a.0709.c258 
@@ -262,7 +262,7 @@ voice register dn 10
  allow watch
 !
 voice register pool 1
- id mac obob.cafe.baba
+ id mac 00aa.6e6c.0194
  number 1 dn 1
  number 2 dn 2
  number 3 dn 3
@@ -270,19 +270,19 @@ voice register pool 1
  number 5 dn 5
  dtmf-relay sip-notify
  username 62Passa password 62Passa
- codec g762ulaw
+ codec g711ulaw
  type 8851
 !
 voice register pool 2
- id mac haha.face.bobo
+ id mac dcf7.19d9.b892
  number 1 dn 6
  number 2 dn 8
  number 3 dn 9
  number 4 dn 7
  number 5 dn 10
  dtmf-relay sip-notify
- username 62Passb password 62Passb
- codec g762ulaw
+ username 11Passb password 11Passb
+ codec g711ulaw
  type 8851
 end
 
