@@ -391,7 +391,7 @@ end
 !@CoreBABA:
 config t
 router ospf 1
-router-id 10.62.11.4
+router-id 10.62.62.4
 network 10.62.0.0  0.0.255.255 area 0
 int gi 0/1
  ip ospf network point-to-point
@@ -421,7 +421,7 @@ config system interface
   next
  edit internal1
   set mode static
-  set ip 10.62.11.1 255.255.255.0
+  set ip 10.62.62.1 255.255.255.0
   set allowaccess ping https ssh telnet http
   set role lan
   set alias "INTERNAL"
@@ -449,7 +449,7 @@ config router ospf
  config network
   edit 1
    set area 0.0.0.0
-   set prefix 10.62.11.0 255.255.255.0
+   set prefix 10.62.62.0 255.255.255.0
    next
   edit 2
    set area 0.0.0.0
